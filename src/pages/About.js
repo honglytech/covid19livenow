@@ -12,7 +12,7 @@ function About() {
       <br />
       <h2>About</h2>
       <br />
-      <a href="https://ko-fi.com/I3I51NB3J" target="_blank">
+      <a href="https://ko-fi.com/I3I51NB3J" target="_blank" rel="noopener noreferrer">
         <img
           height="36"
           src="https://cdn.ko-fi.com/cdn/kofi1.png?v=2"
@@ -40,7 +40,7 @@ function About() {
         <h4>How to connect?</h4>
         <div style={{ fontSize: "20px" }}>
           You can connect me via linkedIn{" "}
-          <a href="https://www.linkedin.com/in/hong-ly/" target="_blank">
+          <a href="https://www.linkedin.com/in/hong-ly/" target="_blank" rel="noopener noreferrer">
             here
           </a>
           .
@@ -52,6 +52,7 @@ function About() {
           <a
             href="https://www.youtube.com/channel/UCjJHir6dFiHSOe5EayRoSMw"
             target="_blank"
+            rel="noopener noreferrer"
           >
             here
           </a>{" "}

@@ -1,32 +1,53 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "../App.css";
 import ReactApexChart from "react-apexcharts";
 
 function Graph() {
+  const [cases, setcases] = useState([]);
+  const [recovered, setrecovered] = useState([]);
+  const [deaths, setdeaths] = useState([]);
+
+  useEffect(() => {
+    axios
+      .all([
+        axios.get("https://corona.lmao.ninja/v2/historical/all?lastdays=1095"),
+      ])
+      .then((responseArr) => {
+        setcases(responseArr[0].data.cases);
+        setrecovered(responseArr[0].data.recovered);
+        setdeaths(responseArr[0].data.deaths);
+      })
+      .catch((error) => {
+        return error;
+      });
+  }, []);
+
+  var Cases = Object.entries(cases).map(([key,value]) => {
+    return({x: key, y: value})
+  });
+  var Recovered = Object.entries(recovered).map(([key,value]) => {
+    return({x: key, y: value})
+  });
+  var Deaths = Object.entries(deaths).map(([key,value]) => {
+    return({x: key, y: value})
+  });
+
   const series = [
     {
       name: "Cases",
-      data: [
-        555,
-        12038,
-        69030,
-        88369,
-        167466,
-        932638,
-        2055423,
-        3343777,
-        3845718,
-      ],
+      data: Cases,
     },
     {
       name: "Recovered",
-      data: [28, 284, 9394, 42710, 76026, 191853, 501538, 1029651, 1255481],
+      data: Recovered
     },
     {
       name: "Deaths",
-      data: [17, 259, 1666, 2996, 6472, 49675, 140658, 238619, 269567],
+      data: Deaths
     },
   ];
+
   const options = {
     dataLabels: {
       enabled: false,
@@ -36,17 +57,7 @@ function Graph() {
     },
     xaxis: {
       type: "datetime",
-      categories: [
-        "1/22/20",
-        "2/1/20",
-        "2/15/20",
-        "3/1/20",
-        "3/15/20",
-        "4/1/20",
-        "4/15/20",
-        "5/1/20",
-        "5/7/20",
-      ],
+      categories: [],
     },
     tooltip: {
       x: {

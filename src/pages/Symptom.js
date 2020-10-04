@@ -48,6 +48,7 @@ function Symptom() {
             <a
               href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "blue" }}
             >
               who.int
@@ -87,7 +88,7 @@ function Symptom() {
             Seek immediate medical attention if you have serious symptoms.
             Always call before visiting your doctor or health facility.
           </p>
-          <img src={Doctor} style={{ height: 350 }} />
+          <img src={Doctor} alt="Doctor_img" style={{ height: 350 }} />
           <p>
             People with mild symptoms who are otherwise healthy should manage
             their symptoms at home.
@@ -101,6 +102,7 @@ function Symptom() {
             <a
               href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=symptoms"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "blue" }}
             >
               who.int
@@ -119,11 +121,11 @@ function Symptom() {
             <li>
               Clean your hands often. Use soap and water, or an alcohol-based
               hand rub.
-              <img src={CleanHand} style={{ height: 450 }} />
+              <img src={CleanHand} alt="CleanHand_img" style={{ height: 450 }} />
             </li>
             <li>
               Maintain a safe distance from anyone who is coughing or sneezing.
-              <img src={Distance} style={{ height: 350 }} />
+              <img src={Distance} alt="Distance_img" style={{ height: 350 }} />
             </li>
 
             <li>Don’t touch your eyes, nose or mouth.</li>
@@ -148,6 +150,7 @@ function Symptom() {
             <a
               href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "blue" }}
             >
               who.int
@@ -175,10 +178,10 @@ function Symptom() {
             attention from adults during difficult times. Keep to regular
             routines and schedules as much as possible.
           </p>
-          <img src={Home} style={{ height: 150 }} />
-          <img src={Call} style={{ height: 250 }} />
-          <img src={Workout} style={{ height: 250 }} />
-          <img src={Food} style={{ height: 200 }} />
+          <img src={Home} alt="Home_img" style={{ height: 150 }} />
+          <img src={Call} alt="Call_img" style={{ height: 250 }} />
+          <img src={Workout} alt="Workout_img" style={{ height: 250 }} />
+          <img src={Food} alt="Food_img" style={{ height: 200 }} />
           <p>
             It is normal to feel sad, stressed, or confused during a crisis.
             Talking to people you trust, such as friends and family, can help.
@@ -199,6 +202,7 @@ function Symptom() {
             <a
               href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=protect"
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "blue" }}
             >
               who.int
