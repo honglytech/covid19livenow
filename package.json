@@ -17,7 +17,7 @@
     "react-ga": "^2.7.0",
     "react-number-format": "^4.4.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-spinners": "^0.8.1",
     "react-tabs": "^3.1.0",
     "react-toggle": "^4.1.1",
